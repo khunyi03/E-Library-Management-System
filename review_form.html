@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Your Book Review</title>
+  <style>
+    label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Book Review Form</h1>
+  <form action="sumbit_review.php" method="post">
+    <label for="first_name">Reviewer First Name:</label>
+    <input type="text" name="first_name" id="first_name" required>
+    
+    <label for="last_name">Reviewer Last Name:</label>
+    <input type="text" name="last_name" id="last_name" required>
+    
+    <label for="book_title">Book Title:</label>
+    <input type="text" name="book_title" id="book_title" required>
+    
+    <label for="book_author">Book Author:</label>
+    <input type="text" name="book_author" id="book_author" required>
+    
+    <label for="rating">Rating (1–5 stars):</label>
+    <select name="rating" id="rating" required>
+      <option value="1">1 Star</option>
+      <option value="2">2 Stars</option>
+      <option value="3">3 Stars</option>
+      <option value="4">4 Stars</option>
+      <option value="5">5 Stars</option>
+    </select>
+    
+    <label for="written_review">Written Review:</label>
+    <textarea name="written_review" id="written_review" rows="5" cols="40" required></textarea>
+    
+    <label for="review_date">Date of Review:</label>
+    <input type="date" name="review_date" id="review_date" required>
+    
+    <br><br>
+    <input type="submit" value="Submit Review">
+  </form>
+</body>
+</html>
